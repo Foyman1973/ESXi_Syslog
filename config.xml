@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+   <Config version="6" updated="02-JULY-2019">
+      <!-- Core configurations, add additional as necessary-->
+      <SMTP value="smtp.yourdomain.org"/>
+      <FROM value="sender@yourdomain.org"/>
+      <FROM_TEST value="test.sender@yourdomain.org"/>
+      <TO value="recipient@yourdomain.org"/>
+      <TO_TEST value="test.recipient@yourdomain.org"/>
+      <ReportTitle value="Log Insight SYSLOG Check"/>
+      <vCenterList value="D:\SCRIPTS\CONTROL\vCenterList.csv"/>
+      <vCenterList_TEST value="D:\SCRIPTS\CONTROL\vCenterList_TEST.csv"/>
+      <vRILlist value="C:\CONTROL\vRLIInstances.csv"/>
+      <vRILlist_TEST value="C:\CONTROL\DEV_vRLIInstances.csv"/>
+      <DevMode value="TRUE"/>
+      <retryTest value="10"/>
+      <ThresholdMinutes value="15"/>
+      <DoReporting value="FALSE"/>
+      <SendMail value="TRUE"/>
+      <rootAPI value="loginsight.yourdomain.org/api/v1/"/>
+      <vCenterFilter value="PROD"/>
+      <!-- Used for storing CSS formats -->
+      <TableFormats>
+      	<Blue value="&lt;style type=&quot;text/css&quot;&gt;body{font-family:calibri;font-size:10pt;font-weight:normal;color:black;}th{text-align:center; text-shadow: 1px 1px black; background-color:#00417c; color:#FFFFFF; font-weight:bold; font-size:12px;}td{background-color:#F5F5F5; font-weight:normal; font-size:10px; padding: 3px 10px 3px 10px;}&lt;/style&gt;"/>
+      	<Red value="&lt;style type=&quot;text/css&quot;&gt;body{font-family:calibri;font-size:10pt;font-weight:normal;color:black;}th{text-align:center; text-shadow: 1px 1px black; background-color:#800000; color:#FFFFFF; font-weight:bold; font-size:12px;}td{background-color:#F5F5F5; font-weight:normal; font-size:10px; padding: 3px 10px 3px 10px;}&lt;/style&gt;"/>
+      	<Green value="&lt;style type=&quot;text/css&quot;&gt;body{font-family:calibri;font-size:10pt;font-weight:normal;color:black;}th{text-align:center; text-shadow: 1px 1px black; background-color:#006600; color:#FFFFFF; font-weight:bold; font-size:12px;}td{background-color:#F5F5F5; font-weight:normal; font-size:10px; padding: 3px 10px 3px 10px;}&lt;/style&gt;"/>
+      	<Purple value="&lt;style type=&quot;text/css&quot;&gt;body{font-family:calibri;font-size:10pt;font-weight:normal;color:black;}th{text-align:center; text-shadow: 1px 1px black; background-color:#400080; color:#FFFFFF; font-weight:bold; font-size:12px;}td{background-color:#F5F5F5; font-weight:normal; font-size:10px; padding: 3px 10px 3px 10px;}&lt;/style&gt;"/>
+      </TableFormats>
+   </Config>
+   <!-- Section for listing local or remote report output folders-->
+   <ReportFiles>
+      <ReportFile ReportFileType="SQL" ReportFileName="\\hostnameFQDN\FolderName"/>
+   </ReportFiles>
+</Data>
